@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Ice Cream</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .header {
+            background-color: #00AC4E;
+            height: 30px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .header1 {
+            height: 120px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            /* justify-content: space-between; */
+            /* background-color: #d7c0d3; */
+        }
+
+        .header1 img {
+            height: 50px;
+            margin-left: 200px;
+            margin-top: 3px;
+            gap: 40px;
+            width: 250px;
+        }
+
+        .header1 button {
+            background-color: #00AC4E;
+            border-radius: 5px;
+            padding: 10px 20px;
+            color: white;
+            font-weight: bold;
+            border: none;
+        }
+
+        .header1 input {
+            padding: 16px;
+            width: 400px;
+            font-size: 16px;
+            margin-left: 300px;
+            background-color: #E6E7E9;
+            border: none;
+            color: #8B8788;
+            /* margin-top: ; */
+        }
+
+        .header2 {
+            background-color: #39393F;
+            height: 50px;
+            gap: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: normal;
+            overflow: hidden;
+        }
+
+        .header2 ul {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 30px;
+            font-weight: normal;
+        }
+
+        .header2 ul li {
+            list-style-type: none;
+            gap: 30px;
+        }
+
+        .header2 ul li a {
+            align-items: center;
+            color: white;
+            gap: 30px;
+            text-decoration: none;
+            /* margin-top: 20px; */
+        }
+
+        
+
+        .hero_section {
+            height: 5000px;
+            width: 100%;
+            background-color: #EDF2D1;
+            padding: 0px 10px;
+        }
+
+        .hero_section img {
+            height: 800px;
+            width: 100%;
+        }
+
+        .hero_section p {
+            text-align: center;
+            color: #8B8788;
+            font-weight: normal;
+            line-height: 25px;
+        }
+
+
+        .section2 h1 {
+            /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .section3 {
+            height: 380px;
+            width: 85%;
+            /* background-color: #00AC4E; */
+            margin-left: 100px;
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .section3 .card_1 {
+            height: 380px;
+            width: 28.33%;
+            /* background-color: aqua; */
+        }
+
+        .section3 .card_1 img {
+            height: 380px;
+            width: 100%;
+        }
+
+        .section3 .card_1 h5 {
+            text-align: center;
+            font-size: 15px;
+            /* font-variant: small-caps; */
+        }
+
+
+        .section3 .card_1 button {
+            background-color: #05AB4C;
+            color: white;
+            width: 100%;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 10px 20px;
+             border-radius: 5px;
+        }
+
+        .section3 .card_2 {
+            height: 380px;
+            width: 28.33%;
+            /* background-color: blue; */
+            /* display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; */
+        }
+
+        .card_2 img {
+            height: 380px;
+            width: 100%;
+        }
+
+        .card_2 h5 {
+            text-align: center;
+            font-size: 15px;
+            /* font-variant: small-caps; */
+        }
+
+
+        .card_2 button {
+            background-color: #05AB4C;
+            color: white;
+            width: 100%;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 10px 20px;
+             border-radius: 5px;
+        }
+
+
+        .section3 .card_3 {
+            height: 380px;
+            width: 28.33%;
+            background-color: blueviolet;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+        }
+
+        .section3 .card_3 img {
+            height: 380px;
+            width: 100%;
+        }
+
+        .card_3 h5 {
+            text-align: center;
+            font-size: 15px;
+            /* font-variant: small-caps; */
+        }
+
+
+        .card_3 button {
+            background-color: #05AB4C;
+            color: white;
+            width: 100%;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .section4 {
+            height: 200px;
+            width: 90%;
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+            line-height: 60px;
+            margin: 0px 80px;
+            border-radius: 5px;
+            box-shadow: 0px 5px 5px #8B8788;
+        }
+
+        .section4 p{
+            line-height: 22px;
+        }
+
+        .section4 button{
+            padding: 10px 20px;
+            background-color: #00AC4E;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+        }
+
+        .footer{
+            background-color: #39393F;
+            color: white;
+            height: 500px;
+            width: 100%;
+            padding: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer .f1,.f2,.f3,.f4{
+            padding: 20px;
+            line-height: 25px;
+        }
+
+        .footer .f1,.f2,.f3,.f4 h4{
+            line-height: 25px;
+        }
+
+        .f1{
+            /* background-color: aqua; */
+           height:250px;
+           width: 36.33%;
+
+        }
+
+        .f2{
+            /* background-color: rgb(195, 126, 37); */
+           height:250px;
+           width: 33.33%;
+
+        }
+
+        .f3{
+            /* background-color: rgb(45, 240, 38); */
+           height:250px;
+           width: 33.33%;
+
+        }
+
+        .f4{
+            /* background-color: rgb(228, 34, 69); */
+           height:250px;
+           width: 33.33%;
+        }
+
+        @media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer .f1, .footer .f2, .footer .f3, .footer .f4 {
+    width: 100%;
+  }
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <header class="header_section">
+            <div class="header">
+                <h4>*This is only a brand name and does not represent its true nature.</h4>
+            </div>
+
+            <div class="header1">
+                <img src="assests/Logo_Natural_icecream.png" alt="">
+                <button>Order Now</button>
+                <input type="text" placeholder="I'm looking for.....">
+            </div>
+
+            <div class="header2">
+                <ul>
+                    <li><a href="">Tree to Treat</a></li>
+                    <li><a href="">Our Leagacy</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Malai Magic</a></li>
+                    <li><a href="">Francies Quires</a></li>
+                    <li><a href="">Store Locater</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section class="hero_section">
+            <div class="section1">
+                <img src="assests/Icecream.jpg" alt="">
+                <br><br><br>
+                <p style="font-weight: normal;">Did you know this amazing fact? You can make some great dishes using
+                    Malai ice cream from Naturals.
+                    We know it sounds <br> unbelievable but it’s true. Discover the #MalaiMagic for yourself.</p>
+            </div>
+
+            <br><br><br><br><br><br>
+
+            <div class="section2">
+                <h1 style="font-family:Verdana, Geneva, Tahoma, sans-serif;">RECIPE WITH MALAI ICE CREAM</h1>
+            </div>
+
+            <br><br>
+
+            <div class="section3">
+                <div class="card_1">
+                    <img src="assests/shake.jpg" alt="">
+                    <br>
+                    <h5 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, ; margin-top: 10px;">MANGO
+                        OATS PUDDING</h5>
+                    <br>
+                    <button>View Recipe</button>
+                </div>
+
+                <div class="card_2">
+                    <img src="assests/kulfi.jpg" alt="">
+                    <br>
+                    <h5 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; margin-top: 10px;">BREAD
+                        MALAI ROLL</h5>
+                    <br>
+                    <button>View Recipe</button>
+                </div>
+
+                <div class="card_3">
+                    <img src="assests/malai.jpg" alt="">
+                    <br>
+                    <h5 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; margin-top: 10px;">BREAD
+                        MALAI ROLL</h5>
+                    <br>
+                    <button>View Recipe</button>
+                </div>
+            </div>
+
+            <br><br><br><br><br><br><br>
+
+            <div class="section3">
+                <div class="card_1">
+                    <img src="assests/Mango-Bombolonis-1.jpg" alt="">
+                    <br>
+                    <h5 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, ; margin-top: 10px;">MANGO
+                        OATS PUDDING</h5>
+                    <br>
+                    <button>View Recipe</button>
+                </div>
+
+                <div class="card_2">
+                    <img src="assests/Mango-Barfi-1.jpg" alt="">
+                    <br>
+                    <h5 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; margin-top: 10px;">BREAD
+                        MALAI ROLL</h5>
+                    <br>
+                    <button>View Recipe</button>
+                </div>
+
+                <div class="card_3">
+                    <img src="assests/Mango-Panna-Cotta-1.jpg" alt="">
+                    <br>
+                    <h5 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; margin-top: 10px;">BREAD
+                        MALAI ROLL</h5>
+                    <br>
+                    <button>View Recipe</button>
+                </div>
+            </div>
+            <br><br><br><br><br><br><br>
+
+            <div class="section3">
+                <div class="card_1">
+                    <img src="assests/Mango-Shahi-Tukda-1.jpg" alt="">
+                    <br>
+                    <h5 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, ; margin-top: 10px;">MANGO
+                        OATS PUDDING</h5>
+                    <br>
+                    <button>View Recipe</button>
+                </div>
+
+                <div class="card_2">
+                    <img src="assests/Matcha-Float.jpg" alt="">
+                    <br>
+                    <h5 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; margin-top: 10px;">BREAD
+                        MALAI ROLL</h5>
+                    <br>
+                    <button>View Recipe</button>
+                </div>
+
+                <div class="card_3">
+                    <img src="assests/Muskmelon-Shake-1.jpg" alt="">
+                    <br>
+                    <h5 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; margin-top: 10px;">BREAD
+                        MALAI ROLL</h5>
+                    <br>
+                    <button>View Recipe</button>
+                </div>
+            </div>
+
+            <br><br><br><br><br><br><br>
+
+            <div class="section3">
+                <div class="card_1">
+                    <img src="assests/Creamy-Bread-Rasmalai.jpg" alt="">
+                    <br>
+                    <h5 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, ; margin-top: 10px;">MANGO
+                        OATS PUDDING</h5>
+                    <br>
+                    <button>View Recipe</button>
+                </div>
+
+                <div class="card_2">
+                    <img src="assests/Carrot-Cake.jpg" alt="">
+                    <br>
+                    <h5 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; margin-top: 10px;">BREAD
+                        MALAI ROLL</h5>
+                    <br>
+                    <button>View Recipe</button>
+                </div>
+
+                <div class="card_3">
+                    <img src="assests/Eggless-Strawberry-Cream-Cheesecake-Toast.jpg" alt="">
+                    <br>
+                    <h5 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; margin-top: 10px;">BREAD
+                        MALAI ROLL</h5>
+                    <br>
+                    <button>View Recipe</button>
+                </div>
+            </div>
+            <br><br><br><br><br><br><br>
+
+            <div class="section3">
+                <div class="card_1">
+                    <img src="assests/Hot-Fudge-Cake.jpg" alt="">
+                    <br>
+                    <h5 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, ; margin-top: 10px;">MANGO
+                        OATS PUDDING</h5>
+                    <br>
+                    <button>View Recipe</button>
+                </div>
+
+                <div class="card_2">
+                    <img src="assests/Sabudana-Kheer.jpg" alt="">
+                    <br>
+                    <h5 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; margin-top: 10px;">BREAD
+                        MALAI ROLL</h5>
+                    <br>
+                    <button>View Recipe</button>
+                </div>
+
+                <div class="card_3">
+                    <img src="assests/Strawberry-Sago-Delight-1.jpg" alt="">
+                    <br>
+                    <h5 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; margin-top: 10px;">BREAD
+                        MALAI ROLL</h5>
+                    <br>
+                    <button>View Recipe</button>
+                </div>
+            </div>
+
+            <br><br><br><br><br><br><br>
+
+            <div class="section3">
+                <div class="card_1">
+                    <img src="assests/Sabudana-Kheer.jpg" alt="">
+                    <br>
+                    <h5 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, ; margin-top: 10px;">MANGO
+                        OATS PUDDING</h5>
+                    <br>
+                    <button>View Recipe</button>
+                </div>
+
+                <div class="card_2">
+                    <img src="assests/Chocolate-Pudding.jpg" alt="">
+                    <br>
+                    <h5 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; margin-top: 10px;">BREAD
+                        MALAI ROLL</h5>
+                    <br>
+                    <button>View Recipe</button>
+                </div>
+
+                <div class="card_3">
+                    <img src="assests/Japanese-Fruit-Sando.jpg" alt="">
+                    <br>
+                    <h5 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; margin-top: 10px;">BREAD
+                        MALAI ROLL</h5>
+                    <br>
+                    <button>View Recipe</button>
+                </div>
+            </div>
+
+            <br><br><br><br><br><br><br>
+            <div class="section3">
+                <div class="card_1">
+                    <img src="assests/Mango-Custard-Drink.jpg" alt="">
+                    <br>
+                    <h5 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, ; margin-top: 10px;">MANGO
+                        OATS PUDDING</h5>
+                    <br>
+                    <button>View Recipe</button>
+                </div>
+            </div>
+            <br><br><br><br><br><br><br><br><br>
+
+            <section class="section4">
+                <h1>Creamy dreams with Naturals’ Ice Cream!</h1>
+                <p>Welcome to the ultimate flavour expedition brought to you by Naturals Ice Cream. We're diving
+                    headfirst into a world of creamy indulgence with our beloved Malai Ice Cream, and boy, are we in <br> for
+                    a treat. From classic desserts to innovative twists, buckle up as we explore a mouthwatering lineup
+                    of recipes using our Malai Ice Cream that'll have your taste buds dancing with joy.</p>
+                    <button>Read More</button>
+            </section>
+        </section>
+
+        <footer class="footer">
+            <div class="f1">
+                <h4>Contact Us</h4>
+                <p>Plot 55 ABCD & 56 D, Kandivali Industrial <br>Estate, Charkop, Kandivali (W), Mumbai <br> – 400 067.</p>
+                <p>customercare@naturalicecreams.in</p>
+                <p>+917008456347</p>
+            </div>
+
+            <div class="f2">
+                <h4>ABOUT NATURALS</h4>
+                   <p> Tree To Treat</p>
+                   <p>Our Legacy</p>
+                    <p>Franchise Queries</p>
+                <br><br>
+
+                <h4>FRANCHISE QUERIES</h4>
+                   <p>Become a Business Partner</p> 
+                     <p>Franchise FAQ</p> 
+            </div>
+
+            <div class="f3">
+
+                <h4>OTHERS</h4>
+                    <p>Artist Collaboration</p>
+                    <p>Store locator</p>
+                    <p>CSR</p>
+                    <p>Legal</p>
+                    <p>Nutritional Info</p>
+                    <p>Careers</p>
+                    <p>Blogs</p>
+            </div>
+
+            <div class="f4">
+                <h4>Shop</h4>
+                    <p> Seasonal</p> 
+                    <p>Malai</p> 
+                    <p>Dry Fruit</p> 
+                    <p>Special</p> 
+                    <p>Chocolate</p> 
+                    <p>No Added SugarShop</p> 
+
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

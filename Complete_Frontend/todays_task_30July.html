@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oakberry</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            background-color: #06112A;
+            height: 100px;
+            width: 100%;
+        }
+
+        .box1 {
+            /* background-color: blueviolet; */
+            height: 100px;
+            width: 33.33%;
+            float: left;
+            /* display: flex; */
+        }
+
+        .box1 img {
+            height: 40px;
+            width: 40px;
+            margin-top: 28px;
+            margin-left: 40px;
+            float: left;
+            color: whitesmoke;
+        }
+
+        .box1 p {
+            float: left;
+            margin-top: 30px;
+            margin-left: 20px;
+            color: white;
+
+        }
+
+        .box2 {
+            /* background-color: blanchedalmond; */
+            height: 100px;
+            width: 33.33%;
+            /* margin-left: 33.33%; */
+            float: left;
+        }
+
+        .box2 img {
+            height: 40px;
+            width: 40px;
+            margin-top: 28px;
+            margin-left: 40px;
+            float: left;
+            color: whitesmoke;
+        }
+
+        .box2 p {
+            float: left;
+            margin-top: 30px;
+            margin-left: 20px;
+            color: white;
+
+        }
+
+        .box3 {
+            /* background-color: rgb(68, 205, 23); */
+            height: 100px;
+            width: 33.33%;
+            margin-left: 66.66%;
+        }
+
+        .box3 img {
+            height: 40px;
+            width: 40px;
+            margin-top: 28px;
+            margin-left: 40px;
+            float: left;
+            color: whitesmoke;
+        }
+
+        .box3 p {
+            float: left;
+            margin-top: 30px;
+            margin-left: 20px;
+            color: white;
+
+        }
+
+        .nav1 {
+            background: url(images/8-Interior-Design-Trends-for-Luxury-Apartments.webp) no-repeat center center/cover;
+            background-color: rgba(89, 85, 91, 0.7);
+            height: 700px;
+            width: 100%;
+        }
+
+        .bg-effect {
+            background-color: rgba(89, 85, 91, 0.7);
+            height: 700px;
+            width: 100%;
+        }
+
+        .nav2 {
+            /* background-color: antiquewhite; */
+            height: 80px;
+            width: 100%;
+            display: flex;
+            z-index: 3;
+            background-color: rgba(0, 0, 0, 0.2);
+            /* background: transparent; */
+            /* justify-content: center;
+            align-items: center;
+            gap: 10px; */
+        }
+
+        .nav2 h4 {
+            padding: 15px;
+            margin-left: 100px;
+        }
+
+        .nav3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            margin-left: 140px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            gap: 70px;
+            /* background-color: rgba(0, 0, 0, 0.2); */
+        }
+
+        .nav3 li {
+            list-style-type: none;
+            color: white;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .nav3 li a {
+            list-style-type: none;
+            list-style: none;
+            color: white;
+        }
+
+        .nav3 button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #5EA51D;
+            border-radius: 8px;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 14px;
+            border: none;
+            margin-left: 60px;
+        }
+
+        .nav4 {
+            height: 400px;
+            width: 800px;
+            /* background-color: aqua; */
+            display: flex;
+            text-align: center;
+            /* justify-content: center;
+            align-items: center; */
+            margin: 100px auto;
+        }
+
+        .nav5 h1 {
+            font-size: 70px;
+            margin-left: 110px;
+            text-align: center;
+            color: white;
+        }
+
+        .nav5 p {
+            margin-left: 110px;
+            font-size: 19px;
+            text-align: center;
+            color: white;
+        }
+
+        .nav5 button {
+            padding: 15px 25px;
+            margin-left: 5px;
+            width: 200px;
+            color: white;
+            background-color: #5EA51D;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+            border: none;
+        }
+
+
+        .btn1 button {
+            padding: 15px 25px;
+            width: 200px;
+        }
+
+        .div_box {
+            height: 120px;
+            width: 800px;
+            background-color: #FFFFFF;
+            display: flex;
+            box-shadow: 4px 4px 10px #c7c6c6;
+            /* justify-content: center;
+            align-items: center; */
+        }
+
+        .div_box .b1 {
+            height: 120px;
+            width: 200px;
+            /* background-color: aqua; */
+        }
+
+        .div_box .b2 {
+            height: 120px;
+            width: 200px;
+            /* background-color: pink; */
+        }
+
+        .div_box .b3 {
+            height: 120px;
+            width: 200px;
+            /* background-color: red; */
+        }
+
+        .div_box .b4 {
+            height: 120px;
+            width: 200px;
+            /* background-color: blue; */
+        }
+
+        /* .section{
+            background-color: aquamarine;
+            height: 600px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+             
+        } */
+
+        .sec_01 {
+            text-align: center;
+        }
+
+        .sec_01 h5 {
+            line-height: 40px;
+            color: #60b016;
+            font-weight: normal;
+        }
+
+        .sec_01 h1 {
+            line-height: 40px;
+            font-family: sans-serif;
+        }
+
+        .sec_02 {
+            background-color: #FFFFFF;
+            margin: 50px auto;
+            display: flex;
+            /* justify-content: center;
+            text-align: center; */
+            height: 220px;
+            width: 1000px;
+            gap: 10px;
+        }
+
+        .sec_02_01 {
+            height: 220px;
+            width: 1000px;
+            /* background-color: #b0acac; */
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            gap: 15px;
+        }
+
+        .sec_02_02 {
+            height: 220px;
+            width: 250px;
+            background-color: #F3F5F1;
+            gap: 15px;
+        }
+
+        .sec_02_02 img {
+            height: 80px;
+            margin-top: 50px;
+        }
+
+        .sec_02_02 p {
+            font-size: 20px;
+            color: #000000CC;
+            font-family: sans-serif;
+            margin-top: 2px;
+        }
+
+        .sec_02_02:hover {
+            background-color: #5EA51D;
+        }
+
+
+        .sec_02_03 {
+            height: 220px;
+            width: 250px;
+
+            background-color: #F3F5F1;
+            gap: 15px;
+        }
+
+        .sec_02_03 img {
+            height: 80px;
+            margin-top: 50px;
+        }
+
+        .sec_02_03 p {
+            font-size: 20px;
+            color: #000000CC;
+            font-family: sans-serif;
+            margin-top: 2px;
+        }
+
+        .sec_02_03:hover {
+            background-color: #5EA51D;
+        }
+
+
+
+        .sec_02_04 {
+            height: 220px;
+            width: 250px;
+
+            background-color: #F3F5F1;
+            gap: 15px;
+        }
+
+
+        .sec_02_04 img {
+            height: 80px;
+            margin-top: 50px;
+        }
+
+        .sec_02_04 p {
+            font-size: 20px;
+            color: #000000CC;
+            font-family: sans-serif;
+            margin-top: 2px;
+        }
+
+        .sec_02_04:hover {
+            background-color: #5EA51D;
+        }
+
+
+        .sec_02_05 {
+            height: 220px;
+            width: 250px;
+            background-color: #F3F5F1;
+            gap: 15px;
+        }
+
+
+        .sec_02_05 img {
+            height: 80px;
+            margin-top: 50px;
+        }
+
+        .sec_02_05 p {
+            font-size: 20px;
+            color: #000000CC;
+            font-family: sans-serif;
+            margin-top: 2px;
+        }
+
+        .sec_02_05:hover {
+            background-color: #5EA51D;
+        }
+
+
+        .sec_03 {
+            height: 125px;
+            width: 1000px;
+            margin-left: 250px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .sec_03_01 {
+            height: 125px;
+            width: 333.33px;
+            /* background-color: rgb(104, 33, 210); */
+            font-family: sans-serif;
+        }
+
+        .sec_03_01 p {
+            margin-top: 20px;
+            font-size: 18px;
+            font-family: sans-serif;
+            line-height: 30px;
+        }
+
+        .sec_03_01 button {
+            color: #81e821;
+            padding: 5px;
+            background-color: #f7f7f7;
+            font-size: 15px;
+            border: none;
+            /* border-top: 5px solid #3a3a3a; */
+        }
+
+        .sec_03_01 button:hover{
+            background-color: #60b016;
+            color: white;
+        }
+        .sec_03_02 {
+            height: 125px;
+            width: 333.33px;
+            /* background-color: rgb(19, 179, 99); */
+        }
+
+        .sec_03_02 p {
+            margin-top: 20px;
+            font-size: 18px;
+            font-family: sans-serif;
+            line-height: 30px;
+        }
+
+        .sec_03_02 button {
+            color: #81e821;
+            padding: 5px;
+            background-color: #f7f7f7;
+            font-size: 15px;
+            border: none;
+        }
+
+         .sec_03_02 button:hover{
+            background-color: #60b016;
+            color: white;
+        }
+
+        .sec_03_03 {
+            height: 125px;
+            width: 333.33px;
+            /* background-color: rgb(208, 188, 11); */
+        }
+
+        .sec_03_03 p {
+            margin-top: 20px;
+            font-size: 18px;
+            font-family: sans-serif;
+            line-height: 30px;
+        }
+
+        .sec_03_03 button {
+            color: #81e821;
+            padding: 5px;
+            background-color: #f7f7f7;
+            font-size: 15px;
+            border: none;
+        }
+
+         .sec_03_03 button:hover{
+            background-color: #60b016;
+            color: white;
+        }
+        .sec_04 {
+            height: 125px;
+            width: 1000px;
+            /* background-color: cadetblue; */
+            margin-left: 250px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .sec_04_04 {
+            height: 125px;
+            width: 333.33px;
+            /* background-color: rgb(12, 199, 71); */
+            font-family: sans-serif;
+        }
+
+        .sec_04_04 p {
+            margin-top: 20px;
+            font-size: 18px;
+            font-family: sans-serif;
+            line-height: 30px;
+        }
+
+        .sec_04_04 button {
+            color: #81e821;
+            padding: 5px;
+            background-color: #f7f7f7;
+            font-size: 15px;
+            border: none;
+            /* border-top: 5px solid #3a3a3a; */
+        }
+
+         .sec_04_04 button:hover{
+            background-color: #60b016;
+            color: white;
+        }
+
+        .sec_04_05 {
+            height: 125px;
+            width: 333.33px;
+            /* background-color: rgb(208, 188, 11); */
+        }
+
+        .sec_04_05 p {
+            margin-top: 20px;
+            font-size: 18px;
+            font-family: sans-serif;
+            line-height: 30px;
+        }
+
+        .sec_04_05 button {
+            color: #81e821;
+            padding: 5px;
+            background-color: #f7f7f7;
+            font-size: 15px;
+            border: none;
+        }
+
+         .sec_04_05 button:hover{
+            background-color: #60b016;
+            color: white;
+        }
+
+        .sec_04_06 {
+            height: 125px;
+            width: 333.33px;
+            /* background-color: rgb(174, 19, 138); */
+        }
+
+        .sec_04_06 p {
+            margin-top: 20px;
+            font-size: 18px;
+            font-family: sans-serif;
+            line-height: 30px;
+        }
+
+        .sec_04_06 button {
+            color: #81e821;
+            padding: 5px;
+            background-color: #f7f7f7;
+            font-size: 15px;
+            border: none;
+        }
+
+         .sec_04_06 button:hover{
+            background-color: #60b016;
+            color: white;
+        }
+
+        .sec_05 {
+            height: 125px;
+            width: 1000px;
+            /* background-color: cadetblue; */
+            margin-left: 250px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .sec_05_07 {
+            height: 125px;
+            width: 333.33px;
+            /* background-color: rgb(12, 199, 71); */
+            font-family: sans-serif;
+        }
+
+        .sec_05_07 p {
+            margin-top: 20px;
+            font-size: 18px;
+            font-family: sans-serif;
+            line-height: 30px;
+        }
+
+        .sec_05_07 button {
+            color: #81e821;
+            padding: 5px;
+            background-color: #f7f7f7;
+            font-size: 15px;
+            border: none;
+            /* border-top: 5px solid #3a3a3a; */
+        }
+
+         .sec_05_07 button:hover{
+            background-color: #60b016;
+            color: white;
+        }
+
+        .sec_05_08 {
+            height: 125px;
+            width: 333.33px;
+            /* background-color: rgb(12, 199, 71); */
+            font-family: sans-serif;
+        }
+
+        .sec_05_08 p {
+            margin-top: 20px;
+            font-size: 18px;
+            font-family: sans-serif;
+            line-height: 30px;
+        }
+
+        .sec_05_08 button {
+            color: #81e821;
+            padding: 5px;
+            background-color: #f7f7f7;
+            font-size: 15px;
+            border: none;
+            /* border-top: 5px solid #3a3a3a; */
+        }
+
+         .sec_05_08 button:hover{
+            background-color: #60b016;
+            color: white;
+        }
+
+        .sec_05_09 {
+            height: 125px;
+            width: 333.33px;
+            /* background-color: rgb(12, 199, 71); */
+            font-family: sans-serif;
+        }
+
+        .sec_05_09 p {
+            margin-top: 20px;
+            font-size: 18px;
+            font-family: sans-serif;
+            line-height: 30px;
+        }
+
+        .sec_05_09 button {
+            color: #81e821;
+            padding: 5px;
+            background-color: #f7f7f7;
+            font-size: 15px;
+            border: none;
+            /* border-top: 5px solid #3a3a3a; */
+        }
+
+         .sec_05_09 button:hover{
+            background-color: #60b016;
+            color: white;
+        }
+
+        .image {
+            /* background-color: #9b9595; */
+             height: 700px;
+            width: 100%;
+                /* z-index: -1;
+                background: black;
+                opacity: .3; */
+            /* background: url(images/home1.webp) no-repeat center center/cover; */
+               display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: rgba(0, 0, 0, 0.9); */
+        }
+
+        /* .image1 {
+            background-color: rgba(0, 0, 0, 0.9); 
+        } */
+
+        .image1 h2{
+            color: white;
+            text-align: center;
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 40px;
+            font-family: sans-serif;
+        }
+
+          .image1 p{
+            color: grey;
+            text-align: center;
+            font-size: 18px;
+            line-height: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header class="header">
+            <nav class="navbar">
+                <div class="box1">
+                    <img style="background-color:white; border-radius: 50%;" src="images/call1.png" alt="">
+                    <p><span style="color: #5EA51D;">Free Call</span> +1 234 456 78910 <br>
+                        <span style="color: #999999; font-size: 15px;">Call Us Now 24/7 Customer Support</span>
+                    </p>
+
+
+                </div>
+                <div class="box2">
+                    <img style="background-color:white;border-radius: 50%;" src="images/location.png" alt="">
+                    <p>Our Location<br>
+                        <span style="color: #999999; font-size: 15px;">Suite 721 New York NY 10016t</span>
+                    </p>
+
+                </div>
+                <div class="box3">
+                    <img style="background-color:white;border-radius: 50%;" src="images/connect.png" alt="">
+                    <p><span style="color: #5EA51D;">Connect</span> with us<br>
+                        <span style="color: #999999; font-size: 15px; font-variant: small-caps;">Facebook Twitter
+                            Dribbble</span>
+                    </p>
+                </div>
+            </nav>
+
+            <nav class="navbar1">
+                <div class="nav1">
+                    <div class="bg-effect">
+                        <div class="nav2">
+                            <h4><span style="font-size: 28px; color: #FFFFFF; font-family: sans-serif;">Oakberry</span>
+                                <br> <span
+                                    style="font-variant: small-caps; font-variant: small-caps;font-size: 16px; color: white;">REAL
+                                    ESTATE AGENCY</span>
+                            </h4>
+                            <div class="nav3">
+                                <li><a href="">HOME</a></li>
+                                <li><a href="">ABOUT</a></li>
+                                <li><a href="">PROPERTIES</a></li>
+                                <li><a href="">AGENTS</a></li>
+                                <li><a href="">BLOG</a></li>
+                                <li><a href="">CONTACT</a></li>
+
+                                <button>SUBMIT A PROPERTY</button>
+                            </div>
+                        </div>
+
+                        <div class="nav4">
+                            <div class="nav5">
+                                <h1>Modern House <br><span style="text-align: center;">Make Better Life</span> </h1>
+                                <br>
+                                <p>A small river named Duden flows by their place and supplies it with the necessary
+                                    regelialia. It is a paradisematic country, in which roasted parts of sentences fly
+                                    into your mouth.</p>
+                                <br><br>
+                                <button style="margin-left: 110px;">Learn More <span
+                                        style="margin-left: 10px;">→</span></button>
+                                <br><br><br><br><br>
+
+
+                                <button class="btn1"
+                                    style="margin-left: 100px; background-color: #F0F0F0;color: #9b9595;">Buy
+                                    Properties</button>
+                                <button class="btn1">Rent Properties</button>
+                                <div class="div_box">
+                                    <div class="b1">
+                                        <h3 style="margin-top: 25px; text-align: left; margin-left: 20px;">ENTER <br>
+                                            KEYBOARD</h3>
+                                        <h6
+                                            style="font-size: 17px; text-align: left;line-height: 38px; margin-left: 18px; color: #9b9595;font-weight: normal;">
+                                            🔍 Enter Key</h6>
+                                    </div>
+                                    <div class="b2">
+                                        <h3 style="margin-top: 25px; text-align: left; margin-left: 20px;">PROPERTY <br>
+                                            TYPE</h3>
+                                        <h6
+                                            style="font-size: 17px; text-align: left;line-height: 38px; margin-left: 18px;color: #9b9595;font-weight: normal;">
+                                            ▽ Residentials</h6>
+                                    </div>
+                                    <div class="b3">
+                                        <h3 style="margin-top: 25px; text-align: left; margin-left: 20px;">LOCATION</h3>
+                                        <h6
+                                            style="font-size: 17px; text-align: left;line-height: 38px; margin-left: 18px;color: #9b9595; font-weight: normal;">
+                                            Search Location</h6>
+                                    </div>
+                                    <div class="b4">
+                                        <h3 style="margin-top: 25px; text-align: left; margin-left: 20px;">PRICE LIMIT
+                                        </h3>
+                                        <h6
+                                            style="font-size: 17px; text-align: left;line-height: 38px; margin-left: 18px;color: #9b9595;font-weight: normal;">
+                                            ▽ $100</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </nav>
+        </header>
+        <br><br><br><br><br><br><br><br>
+
+        <section class="section">
+            <div class="section_01">
+                <div class="sec_01">
+                    <h5>OAKBERRY CATEGORIES</h5>
+                    <h1>Explore Our Categories & Places</h1>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="sec_02">
+                <div class="sec_02_01">
+                    <div class="sec_02_02">
+                        <img src="images/land.png" alt="">
+                        <p>Land</p>
+                    </div>
+                    <div class="sec_02_03">
+                        <img src="images/resendital.png" alt="">
+                        <p>Residential</p>
+                    </div>
+                    <div class="sec_02_04">
+                        <img src="images/commercial.png" alt="">
+                        <p>Commercial</p>
+                    </div>
+                    <div class="sec_02_05">
+                        <img src="images/industries.png" alt="">
+                        <p>Industries</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sec_03">
+                <div class="sec_03_01">
+                    <p>India</p>
+                    <button>200 Properties</button>
+                </div>
+                <div class="sec_03_02">
+                    <p>California</p>
+                    <button>250 Properties</button>
+                </div>
+                <div class="sec_03_03">
+                    <p>Floridia</p>
+                    <button>240 Properties</button>
+                </div>
+            </div>
+
+
+            <div class="sec_04">
+                <div class="sec_04_04">
+                    <p>Londan</p>
+                    <button>300 Properties</button>
+                </div>
+                <div class="sec_04_05">
+                    <p>Tencesse</p>
+                    <button>450 Properties</button>
+                </div>
+                <div class="sec_04_06">
+                    <p>Charlotee</p>
+                    <button>200 Properties</button>
+                </div>
+            </div>
+
+            <div class="sec_05">
+                <div class="sec_05_07">
+                    <p>America</p>
+                    <button>300 Properties</button>
+                </div>
+                <div class="sec_05_08">
+                    <p>Iceland</p>
+                    <button>450 Properties</button>
+                </div>
+                <div class="sec_05_09">
+                    <p>New York</p>
+                    <button>200 Properties</button>
+                </div>
+            </div>
+
+
+            </div>
+
+<br><br>
+
+            <div class="image" style="background-image: url(images/home1.webp);">
+               
+                 <div class="image1" >
+                <h2 >Modern House Video</h2>
+                <br>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and <br>Consonantia, there live the blind texts.</p>
+                    <br>
+                <!-- <img style="height: 60px; text-align: center; margin-left: 250px;" src="images/download1.png" alt=""> -->
+            </div>
+            </div>
+            <br><br>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+#container{
+    background-color: white;
+    height: 600px;
+    width: 900px;
+   /* border:20x solid black; */
+    margin: 50px auto;
+    position: relative;
+}
+
+#container1{
+    background-color: orange;
+    height: 200px;
+    width:100%;
+}
+
+#container2{
+    background-color: white;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container3{
+    background-color: green;
+    height: 200px;
+    width: 100%;
+   
+}
+
+#circle{
+    background-color: blue;
+    height: 150px;
+    width: 150px;
+      border-radius: 50%;
+       position: absolute;
+}

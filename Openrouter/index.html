@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenRouter AI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #03080A;
+        }
+
+        .container {
+            height: 100px;
+            width: 100%;
+            background-color: black;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+
+        .header_section1 {
+            /* background-color: aqua; */
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .header_section1 img {
+            margin-left: 40px;
+            width: 180px;
+        }
+
+        .header_section1 input {
+            padding: 5px 10px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            text-align: center;
+            background-color: #0D1214;
+            color: gray;
+        }
+
+        .header_section1 input:hover {
+            border: 2px solid gray;
+        }
+
+        .header_section1 i {
+            position: relative;
+            left: 30px;
+            color: gray;
+        }
+
+        .header_section2 {
+            height: 80px;
+            /* background-color: aquamarine; */
+            gap: 20px;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+
+        }
+
+        .header_section2 ul {
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            gap: 25px;
+            margin-right: 50px;
+        }
+
+        .header_section2 ul li {
+            list-style-type: none;
+        }
+
+        .header_section2 ul li a {
+            text-decoration: none;
+            color: gray;
+        }
+
+        .header_section2 ul li a button {
+            background-color: #B0E101;
+            color: black;
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .section1 {
+            background-color: #03080A;
+            /* background-color: aqua; */
+            height: 350px;
+            width: 100%;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .section1 p {
+            color: gray;
+        }
+
+        .section1 h1 {
+            color: white;
+            font-size: 50px;
+            line-height: 60px;
+        }
+
+        .section1 button {
+            padding: 12px 40px;
+            gap: 20px;
+            border-radius: 5px;
+            /* background-color: #B0E101; */
+            font-weight: 500;
+            /* border: none; */
+        }
+
+
+        .div_section ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        .div_section ul li {
+            list-style-type: none;
+            gap: 20px;
+        }
+
+        .div_section ul li a {
+            text-decoration: none;
+            gap: 20px;
+        }
+
+        .div_section h1 {
+            font-size: 35px;
+            font-weight: none;
+        }
+
+        .div_section p {
+            font-size: 14px;
+        }
+
+        /* 4 Boxes Section */
+        .section2 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 80px;
+            transition: all 0.5 ease-in;
+            overflow: hidden;
+        }
+
+
+
+        .card {
+            border-radius: 10px;
+            /* padding: 20px; */
+            text-align: start;
+            color: white;
+            transition: all 0.5 ease-in;
+            overflow: hidden;
+        }
+
+
+        .card img {
+            width: 100%;
+            max-height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            transition: all 0.5 ease-in;
+        }
+
+        .card img:hover {
+            transform: scale(1.2);
+        }
+
+        .card--aqua {
+            background-color: #0B1012;
+            border-radius: 5px;
+            border: 1px solid gray;
+            line-height: 24px;
+        }
+
+        .card--violet {
+            background-color: #0B1012;
+            border-radius: 5px;
+            border: 1px solid gray;
+            line-height: 24px;
+        }
+
+        .card--green {
+            background-color: #0B1012;
+            border-radius: 5px;
+            border: 1px solid gray;
+            line-height: 24px;
+        }
+
+        .card--orange {
+            background-color: #0B1012;
+            border-radius: 5px;
+            border: 1px solid gray;
+            line-height: 24px;
+        }
+
+
+        .card--aqua h4,
+        p,
+        a {
+            margin-left: 20px;
+        }
+
+         .card--aqua a {
+            line-height: 60px;
+        }
+
+        .card--aqua p{
+            color: gray;
+        }
+
+
+        .card--aqua a {
+            line-height: 60px;
+            color: white;
+        }
+
+        .card--violet h4,
+        p,
+        a {
+            margin-left: 20px;
+        }
+
+        .card--violet a {
+            line-height: 100px;
+            color: white;
+        }
+
+         .card--violet p{
+            color: gray;
+        }
+
+        .card--green h4,
+        p,
+        a {
+            margin-left: 20px;
+        }
+
+        .card--green a {
+            line-height: 60px;
+            color: white;
+        }
+
+         .card--green p{
+            color: gray;
+        }
+
+        .card--orange h4,
+        p,
+        a {
+            margin-left: 20px;
+        }
+
+        .card--orange a {
+            line-height: 60px;
+            color: white;
+        }
+
+        .card--green p{
+            color: gray;
+        }
+
+
+        .section3{
+            /* padding: 80px; */
+            color: white;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+
+        .b1 p{
+            margin-left: 80px;
+            color: grey;
+             font-size: 15px;
+        }
+
+        .b1 h3{
+            margin-left: 80px;
+            line-height: 35px;
+            color: white;
+            font-weight: normal;
+        }
+
+        .section4{
+             display: flex;
+               height: 300px;
+                background-color: rgb(205, 17, 17);
+                margin: 0px 80px;
+
+        }
+
+      
+    </style>
+</head>
+
+<body>
+    <main>
+        <!-- Header section -->
+        <header class="container">
+            <div class="header_section1">
+                <img src="assests/logo_openrouter.png" alt="">
+                <span>
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="search">
+                </span>
+            </div>
+
+            <div class="header_section2">
+                <ul>
+                    <li><a href="">Models</a></li>
+                    <li><a href="">Fusion</a></li>
+                    <li><a href="">Chat</a></li>
+                    <li><a href="">Rankings</a></li>
+                    <li><a href="">Apps</a></li>
+                    <li><a href="">Docs</a></li>
+                    <li><a href=""><button>Sign Up</button></a></li>
+                </ul>
+            </div>
+        </header>
+        <br><br><br><br>
+
+        <section class="section1">
+            <h1>The Unified Interface For LLMs</h1>
+            <p>Better <span style="color: white; text-decoration: underline gray;"> prices </span>, better <span
+                    style="color: white; text-decoration: underline gray;">uptime </span>, no subscriptions.</p>
+            <button style="background-color: #B0E101; border: none; gap: 25px;"> Get Api key</button>
+            <button style="background: transparent; color: white; border: 1px solid gray;"> Discover Model</button>
+            <br><br>
+            <div class="div_section">
+                <ul>
+                    <li><a href="">
+                            <h1>200T+</h1>
+                            <p>Monthly Tokens</p>
+                        </a></li>
+
+                    <li><a href="">
+                            <h1>100M+</h1>
+                            <p>Global Users</p>
+                        </a></li>
+
+                    <li><a href="">
+                            <h1>70+</h1>
+                            <p>Providers</p>
+                        </a></li>
+
+                    <li><a href="">
+                            <h1>400+</h1>
+                            <p>Models</p>
+                        </a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section2">
+            <div class="card card--aqua">
+                <img src="assests/AI_images.png" alt="">
+                <h4 style="line-height: 30px;">Open API</h4>
+                <p>Access all major models through a unified interface. Open AI SDK works out of the box.</p>
+                <a href="">Browse All</a>
+            </div>
+
+            <div class="card card--violet">
+                <img src="assests/a6b87c10-b3d1-434a-88d4-6d5cb8b4b905.png" alt="">
+                <h4 style="line-height: 30px;">Fusion Technology</h4>
+                <p>Combine multiple models seamlessly for better performance.Open AI SDK.</p>
+                <a href="">Learn More</a>
+            </div>
+
+            <div class="card card--green">
+                <img src="assests/AI_images.png" alt="">
+                <h4 style="line-height: 30px;">Reliable Uptime</h4>
+                <p>Optimized infrastructure ensures consistent availability. Open AI SDK works out of the box.</p>
+                <a href="">Learn More</a>
+            </div>
+
+            <div class="card card--orange">
+                <img src="assests/a6b87c10-b3d1-434a-88d4-6d5cb8b4b905.png" alt="">
+                <h4 style="line-height: 30px;">Affordable Pricing</h4>
+                <p>Transparent pricing with no hidden fees. Open AI SDK works out of the box.</p>
+                <a href="">Learn More</a>
+            </div>
+        </section>
+
+
+        <!-- <h3>Featured Models </h3>
+        <p>400+ active models on 70+ providers</p> -->
+        <section class="section3">
+            <div class="b1">
+                <h3>Featured Models </h3>
+                <p>400+ active models on 70+ providers</p>
+            </div>
+        </section>
+             <br><br>
+        
+        <section class="section4">
+             <div class="box1">
+                <img src="assests/Ai image.webp" alt="">
+                <h4 style="color: white;">Claude Fable 5 <span>by antropic</span></h4>
+                    <br><br><br><br><br>
+                <div class="div1">
+                    <h4>Tokens</h4>
+                    <p>237.5B</p>
+                </div>
+                    <div class="div2">
+                        <h4>Weekly trend</h4>
+                        <p>-15%</p>
+                    </div>
+                
+            </div>
+            <!--<div class="box2">
+                <img src="assests/chat gpt.webp" alt="">
+                <h4 style="color: white;">Claude Fable 5 <span>by antropic</span></h4>
+                    <br><br><br><br><br>
+                <div class="div1">
+                    <h4>Tokens</h4>
+                    <p>237.5B</p>
+                </div>
+            </div>
+            
+            <div class="box3">
+                <img src="assests/meta.webp" alt=""> -->
+            </div>
+        </section>
+
+
+        <br><br>
+    </main>
+</body>
+
+</html>

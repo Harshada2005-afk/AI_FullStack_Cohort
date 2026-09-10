@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar1 {
+            height: 90px;
+            width: 100%;
+            /* background-color: aqua; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav1 {
+            /* background-color: blueviolet; */
+            height: 90px;
+            width: 450px;
+
+        }
+
+        .nav1 img {
+            height: 60px;
+            width: 180px;
+            margin-left: 190px;
+            margin-top: 15px;
+        }
+
+        .nav2 {
+            /* background-color: blanchedalmond; */
+            height: 90px;
+            width: 640px;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .nav2 ul {
+            display: flex;
+        }
+
+        .nav2 li {
+            list-style-type: none;
+            text-decoration: none;
+            color: black;
+            margin-left: 70px;
+            font-size: 17px;
+            font-family: sans-serif;
+            margin-top: 10px;
+        }
+
+        .nav2 a {
+            list-style-type: none;
+            text-decoration: none;
+            color: black;
+        }
+
+
+
+        .nav3 {
+            /* background-color: rgb(198, 125, 14); */
+            height: 90px;
+            width: 450px;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            margin-left: 200px;
+        }
+
+        .nav3 .logo {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background-color: #ce9b9b;
+            display: flex;
+            font-family: sans-serif;
+        }
+
+
+        .nav3 img {
+            border-radius: 50%;
+            color: #CD0001;
+            height: 25px;
+            width: 25px;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+            margin-top: 8px;
+        }
+
+        .logo button {
+            background-color: #bf3f3f;
+            border-radius: 5px;
+            padding: 10px 15px;
+            /* width: 300px; */
+            font-size: 16px;
+            font-weight: bold;
+            /* margin-bottom: 20px; */
+            margin-left: 30px;
+            border: none;
+            color: white;
+        }
+
+        .section1 {
+            background-color: #004998;
+            height: 700px;
+            width: 100%;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            font-family: sans-serif;
+        }
+
+        /* .sec_01{
+            height: 100px;
+        } */
+
+        .sec_01_01 h1 {
+            color: white;
+            margin-top: 540px;
+            /* background-color: aqua; */
+            /* height: 300px; */
+            width: 1000px;
+            font-size: 55px;
+            margin-left: 200px
+        }
+
+        .sec_01_01 p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            width: 1000px;
+            font-size: 18px;
+            font-weight: bold;
+            margin-left: 200px;
+        }
+
+        .sec_01_01 img {
+            position: relative;
+            height: 600px;
+            margin-left: 900px;
+            bottom: 383px;
+        }
+
+        .sec_01_01 button{
+            background-color: #bf3f3f;
+            margin-left: 200px;
+            padding: 10px 20px;
+            color: white;
+            font-size: 14px;
+            border: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .section2{
+            height: 400px;
+            width: 100%;
+            /* background-color: aquamarine; */
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+        }
+
+        .sec_2 img{
+            margin-top: 300px;
+            margin-left: 210px;
+             height: 500px;
+        }
+
+        .sec_02_01{
+            background-color: aquamarine;
+
+        }
+
+
+        /* .section1 .logo1 img{
+            height: 300px;
+             left: 900px;
+             position: relative;
+        } */
+    </style>
+</head>
+
+<body>
+    <main>
+        <header class="navbar">
+            <div class="navbar1">
+                <div class="nav1">
+                    <img src="images/logo-elearning.webp" alt="">
+                </div>
+                <div class="nav2">
+                    <ul>
+                        <li style="margin-left: 180px;"><a href=""><span style="color: #CD0001;">Home</span></a></li>
+                        <li style="margin-left: 60px;"><a href="">Courses</a></li>
+                        <li style="margin-left: 60px;"><a href="">Pages</a></li>
+                        <li style="margin-left: 60px;"><a href="">Shop</a></li>
+                        <li style="margin-left: 60px;"><a href="">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="nav3">
+                    <div class="logo">
+                        <img src="images/searh_logo.png" alt="">
+                        <button>Login</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="section1">
+            <!-- <img  class="logo1" src="images/counter-img.png" alt=""> -->
+             <div class="sec_01">
+                <div class="sec_01_01">
+                    <h1>Empowering <br>Knowledge. Shaping <br>the Future.</h1>
+                    <br>
+                    <p>Advance your Epsilon journey through accredited online programs <br> designed by leading
+                        educators. Learn anywhere. Achieve more.</p>
+                        <br><br>
+                    <button>Apply for Admission</button>
+                    <button style="margin-left: 20px; background: transparent; color: white; border: 1px solid white;">Explore Programs</button>
+                  
+                 <img src="images/pretty-schoolgirl.webp" alt="">
+                </div>
+            </div>
+        </section>
+
+
+        <br><br><br>
+
+        <section class="section2">
+        <div class="sec_2">
+                <div class="about_us">
+                    <img src="images/about_us_image.png" alt="">
+                        <p>ABOUT US</p>
+                        <h2>Where Knowledge Meets <br> Application</h2>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html> 
+
+
+

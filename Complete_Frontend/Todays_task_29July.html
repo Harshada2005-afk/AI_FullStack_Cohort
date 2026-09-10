@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        .hero_section {
+            height: 80px;
+            width: 100%;
+            background-color: #FFFFFF;
+            /* background-color: bisque; */
+            float: left;
+            position: sticky;
+            top: 0px;
+        }
+
+        .logo img {
+            height: 80px;
+            margin-left: 40px;
+            width: 200px;
+            margin-bottom: 100px;
+            float: left;
+        }
+
+        .moon img {
+            height: 30px;
+            width: 28px;
+            float: left;
+            margin-left: 200px;
+            /* background-color: #4B5563; */
+        }
+
+        .btn2 button {
+            width: 200px;
+            padding: 10px;
+            border-radius: 30px;
+            border: none;
+            color: white;
+            background-color: #A87A2A;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .navbar {
+            position: sticky;
+        }
+
+        .navbar1 {
+            /* background-color: blueviolet; */
+            position: sticky;
+            top: 0px;
+            height: 90px;
+            width: 800px;
+            margin-left: 450px;
+            padding: 30px;
+            gap: 20px;
+            list-style-type: none;
+            display: flex;
+        }
+
+
+        .navbar1 a {
+            text-decoration: none;
+            display: flex;
+            color: #4B5563;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font: 14px;
+            position: sticky;
+            top: 0px;
+        }
+
+        .img1 {
+            height: 720px;
+            width: 60%;
+        }
+
+        .image {
+            background: url(images/photo2.jpg) no-repeat center center/cover;
+            height: 720px;
+            width: 100%;
+        }
+
+        .image button {
+            padding: 10px;
+            border-radius: 30px;
+            background: transparent;
+            color: grey;
+            font-size: 15px;
+            font-weight: bold;
+            margin-left: 100px;
+        }
+
+        .image h1 {
+            color: white;
+            font-size: 60px;
+            margin-top: 50px;
+            margin-left: 100px;
+            /* font-family: sans-serif; */
+        }
+
+        .image p {
+            color: white;
+            font-size: 20px;
+            line-height: 30px;
+            margin: 30px;
+            margin-left: 100px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .hero_section2 {
+            background-color: #FFFFFF;
+            height: 800px;
+            width: 100%;
+        }
+
+        /* .images .btn1 {
+            padding: 10px;
+            border-radius: 30px;
+            background: transparent;
+            color: rgb(226, 37, 37);
+            font-size: 18px;
+            font-weight: bold;
+            margin-left: 100px;
+        } */
+
+        .btn3 {
+            padding-top: 80px;
+            margin-left: 680px;
+        }
+
+        .btn3 button {
+            padding: 10px;
+            width: 120px;
+            background-color: #F9EDDA;
+            color: #8C6124;
+            border-radius: 20px;
+            border: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .paragraph {
+            /* text-align: center; */
+            height: 1000px;
+            width: 100%;
+            /* background-color: blueviolet; */
+            /* line-height: 20px; */
+        }
+
+        .paragraph h1 {
+            font-size: 50px;
+        }
+
+        .paragraph p {
+            font-size: 19px;
+        }
+
+        .box1 {
+            /* background-color: aqua; */
+            margin: 30px auto;
+            height: 200px;
+            width: 50%;
+
+        }
+
+        .box1 h2 {
+            background-color: #A87A2A;
+            border-radius: 100%;
+            height: 30px;
+            width: 30px;
+            text-align: center;
+            /* line-height: 25px; */
+        }
+
+        .box1 h3 {
+            font-size: 30px;
+            text-align: right;
+            /* line-height: 20px; */
+
+        }
+
+
+        .box1 p {
+            text-align: right;
+        }
+
+        .box2 {
+            /* background-color: rgb(203, 31, 163); */
+            margin: 30px auto;
+            height: 200px;
+            width: 50%;
+            text-align: center;
+        }
+
+        .box2 h2 {
+            background-color: #A87A2A;
+            border-radius: 100%;
+            height: 30px;
+            width: 30px;
+            /* text-align: left; */
+            margin-left: 750px;
+            /* line-height: 25px; */
+        }
+
+        .box2 h3 {
+            font-size: 30px;
+            text-align: left;
+            /* line-height: 20px; */
+
+        }
+
+
+        .box2 p {
+
+            text-align: left;
+        }
+
+        .box3 {
+            /* background-color: rgb(255, 140, 0); */
+            margin: 30px auto;
+            height: 200px;
+            width: 50%;
+        }
+
+         .box3 h2 {
+            background-color: #A87A2A;
+            border-radius: 100%;
+            height: 30px;
+            width: 30px;
+            text-align: center;
+            line-height: 25px;
+        }
+
+        .box3 h3 {
+            font-size: 30px;
+            text-align: right;
+            /* line-height: 20px; */
+
+        }
+
+
+        .box3 p {
+
+            text-align: right;
+        }
+
+        .box4 {
+            /* background-color: rgb(228, 240, 48); */
+            margin: 30px auto;
+            height: 200px;
+            width: 50%;
+        }
+
+        
+         .box4 h2 {
+            background-color: #A87A2A;
+            border-radius: 100%;
+            height: 30px;
+            width: 30px;
+            /* text-align: left; */
+            margin-left: 750px;
+            /* line-height: 25px; */
+        }
+
+        .box4 h3 {
+            font-size: 30px;
+            text-align: left;
+            /* line-height: 20px; */
+
+        }
+
+
+        .box4 p {
+
+            text-align: left;
+        }
+/* 
+        .b1 {
+            background-color: #4B5563;
+            height: 100%;
+            width: 100px;
+            margin-left: 390px;
+        } */
+    </style>
+    <title>Atelier Studio</title>
+</head>
+
+<body>
+    <main>
+        <header class="hero_section">
+            <div class="logo">
+                <img src="https://atelier-colorlib.pages.dev/assets/img/logo.svg" alt="">
+                <!-- <h2>Atelier STUDIO</h2> -->
+
+
+                <div class="navbar">
+                    <nav class="navbar1">
+                        <a href="">About</a>
+                        <a href="" style="margin-left: 20px;">Portfolio</a>
+                        <a href="" style="margin-left: 20px;">Services</a>
+                        <a href="" style="margin-left: 20px;">Pricing</a>
+                        <a href="" style="margin-left: 20px;">Blog</a>
+                        <a href="" style="margin-left: 20px;">Contact</a>
+
+                        <div class="moon">
+                            <img src="images/moon.jpg" alt="">
+                        </div>
+
+                        <div class="btn2">
+                            <button>Book Consulation</button>
+                        </div>
+
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <section class="section1">
+            <div class="image">
+                <div class="img1">
+                    <!-- <img src="images/photo2.jpg" alt=""> -->
+                    <button>✨ 47 Project Completed</button>
+                    <h1>Transforming Spaces <br>Into Extraordinary <br>Experiences</h1>
+                    <p>Award-winning interior design studio crafting timeless,<br> sophisticated environments for
+                        discerning
+                        clients across <br> residential, commercial, and hospitality sectors.</p>
+                    <button class="btn1"
+                        style="  padding: 10px 20px; gap: 5px; border-radius: 30px;background: transparent; color: black; background-color: white; font-size: 15px;font-weight: bold; margin-left: 100px; border-color: white; font-family: sans-serif;">Residential
+                        (18)</button>
+                    <button class="btn1"
+                        style="  padding: 10px 20px;border-radius: 30px;background: transparent; color: white; font-size: 15px;font-weight: bold; margin-left: 10px;border-color: none; font-family: sans-serif;">Commercial
+                        (12)</button>
+                    <button class="btn1"
+                        style="  padding: 10px 20px;border-radius: 30px;background: transparent; color: white; font-size: 15px;font-weight: bold; margin-left: 10px;border-color: none; font-family: sans-serif;">Hospitality
+                        (9)</button>
+                    <button class="btn1"
+                        style="  padding: 10px 20px;border-radius: 30px;background: transparent; color: white; font-size: 15px;font-weight: bold; margin-left: 10px;border-color: none; font-family: sans-serif;">Retail
+                        (8)</button><br><br>
+                    <button class="btn1"
+                        style="padding: 10px 20px;border-radius: 30px;background: transparent; color: white; font-size: 12px;font-weight: bold; margin-left: 100px;border-color: #A87A2A; background-color: #A87A2A; font-family: sans-serif; width: 150px;">View
+                        Profile →</button>
+                    <button class="btn1"
+                        style="padding: 10px 20px;border-radius: 30px;background: transparent; color: white; font-size: 12px;font-weight: bold; margin-left: 10px;border-color: none; font-family: sans-serif; width: 150px;">Book
+                        Consaltation</button>
+                </div>
+            </div>
+
+
+            <div class="hero_section2">
+                <div class="btn3">
+                    <button>Our Process</button>
+                </div>
+                <br>
+                <div class="paragraph">
+                    <h1 style=" text-align: center;">How We Work</h1>
+                    <p style=" text-align: center;">A collaborative four-step journey from initial vision to final
+                        reveal, ensuring every detail <br>reflects your unique story.</p>
+                 <br><br>       
+                    <div class="paragraph1">
+                        <div class="box1">
+                            <h2>01</h2>
+                            <h3>Consult</h3>
+                            <br>
+                            <p>We begin with an in-depth conservation to <br>understand your vision afestyle and goals.
+                                <br> This discovery phase shapes emily decision.</p>
+                            <!-- <div class="b1"></div> -->
+                        </div>
+
+                        <div class="box2">
+                             <h2>02</h2>
+                             <h3>Design</h3>
+                             <br>
+                            <p>We begin with an in-depth conservation to <br>understand your vision afestyle and goals.
+                                <br> This discovery phase shapes emily decision.</p>
+                           
+                           
+                        </div>
+
+                        <div class="box3">
+                            <h2>03</h2>
+                            <h3>Refine</h3>
+                            <br>
+                            <p>We begin with an in-depth conservation to <br>understand your vision afestyle and goals.
+                                <br> This discovery phase shapes emily decision.</p>
+                        </div>
+                        <div class="box4">
+                            <h2>04</h2>
+                            <h3>Execute</h3>
+                            <br>
+                            <p>We begin with an in-depth conservation to <br>understand your vision afestyle and goals.
+                                <br> This discovery phase shapes emily decision.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
