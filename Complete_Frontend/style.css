@@ -1,6 +1,22 @@
-h1{
-    font-size: 50px;
+h1 {
+    font-size: 30px;
     text-align: center;
-    font-style: oblique;
 }
 
+.profile {
+    margin: 50px auto;
+    width: 800px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+    background-color: rgb(157, 152, 186);
+}
+
+img{
+    float: right;
+}
+
+table{
+    background-color: rgb(174, 197, 204);
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Code for prime number in function</h1>
+
+    <script>
+
+        // Syntax for function
+        // function function_name(){
+        //     // block of code
+        // }
+        // function calling
+
+        function Prime_number(num){
+            if(num<=1){
+                return false;
+            }
+            for(let i=2;i<num;i++){
+                if(num % i === 0){
+                    return false;
+                }
+            }
+        return true;
+        }
+        console.log(Prime_number(7));
+        console.log(Prime_number(8));
+
+
+        
+        // Nullishing collison operator
+        // example
+        let PAN="ABCDE12345LMN";
+        let AADHAR="123456789";
+        let result= PAN ?? AADHAR;
+        console.log(result);
+
+
+
+    </script>
+
+
+</body>
+</html>
